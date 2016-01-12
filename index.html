@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Multi-page template</title>
+	<link rel="stylesheet" href="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src='lib/jquery.mobile-1.4.5/jquery.js'></script>
+	<script type="text/javascript" src='lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js'></script>
+	<script type="text/javascript" src='js/app.js'></script>
+    
+</head>
+
+<body>
+
+<!-- Start of home page: #two -->
+<div data-role="page" id="home" data-theme="a">
+	<div data-role="header">
+		<h1>8x Memory</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+        <a href="#gameplay" class="ui-btn ui-btn-b" onclick="ExMemory.startGame()" data-transition="flip" >New Game</a>
+        <a href="#halloffame" class="ui-btn ui-btn-b" onclick="ExMemory.updateHallOfFame()" data-transition="flip">Hall of Fame</a>
+        <a href="#howtoplay" class="ui-btn ui-btn-b" data-transition="flip">How to Play</a>
+        <a href="#" class="ui-btn ui-btn-b">Exit</a>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4></h4>
+	</div><!-- /footer -->
+</div><!-- /Home two -->
+    
+    
+<div data-role="page" id="gameplay" data-theme="a">
+
+	<div data-role="header">
+		<h1>8x Memory</h1>
+		<a href="#MenuPanel" data-icon="gear" class="ui-btn-right">Options</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+	<center>
+		<table id="gamegrid"><tr align='center'><td><a href='#' class='ui-btn ui-btn-inline' id='B00' onclick='ExMemory.clickButton(0,0)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B01' onclick='ExMemory.clickButton(0,1)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B02' onclick='ExMemory.clickButton(0,2)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B03' onclick='ExMemory.clickButton(0,3)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B04' onclick='ExMemory.clickButton(0,4)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B05' onclick='ExMemory.clickButton(0,5)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B06' onclick='ExMemory.clickButton(0,6)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B07' onclick='ExMemory.clickButton(0,7)'>?</a></td></tr><tr align='center'><td><a href='#' class='ui-btn ui-btn-inline' id='B10' onclick='ExMemory.clickButton(1,0)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B11' onclick='ExMemory.clickButton(1,1)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B12' onclick='ExMemory.clickButton(1,2)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B13' onclick='ExMemory.clickButton(1,3)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B14' onclick='ExMemory.clickButton(1,4)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B15' onclick='ExMemory.clickButton(1,5)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B16' onclick='ExMemory.clickButton(1,6)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B17' onclick='ExMemory.clickButton(1,7)'>?</a></td></tr><tr align='center'><td><a href='#' class='ui-btn ui-btn-inline' id='B20' onclick='ExMemory.clickButton(2,0)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B21' onclick='ExMemory.clickButton(2,1)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B22' onclick='ExMemory.clickButton(2,2)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B23' onclick='ExMemory.clickButton(2,3)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B24' onclick='ExMemory.clickButton(2,4)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B25' onclick='ExMemory.clickButton(2,5)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B26' onclick='ExMemory.clickButton(2,6)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B27' onclick='ExMemory.clickButton(2,7)'>?</a></td></tr><tr align='center'><td><a href='#' class='ui-btn ui-btn-inline' id='B30' onclick='ExMemory.clickButton(3,0)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B31' onclick='ExMemory.clickButton(3,1)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B32' onclick='ExMemory.clickButton(3,2)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B33' onclick='ExMemory.clickButton(3,3)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B34' onclick='ExMemory.clickButton(3,4)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B35' onclick='ExMemory.clickButton(3,5)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B36' onclick='ExMemory.clickButton(3,6)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B37' onclick='ExMemory.clickButton(3,7)'>?</a></td></tr><tr align='center'><td><a href='#' class='ui-btn ui-btn-inline' id='B40' onclick='ExMemory.clickButton(4,0)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B41' onclick='ExMemory.clickButton(4,1)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B42' onclick='ExMemory.clickButton(4,2)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B43' onclick='ExMemory.clickButton(4,3)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B44' onclick='ExMemory.clickButton(4,4)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B45' onclick='ExMemory.clickButton(4,5)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B46' onclick='ExMemory.clickButton(4,6)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B47' onclick='ExMemory.clickButton(4,7)'>?</a></td></tr><tr align='center'><td><a href='#' class='ui-btn ui-btn-inline' id='B50' onclick='ExMemory.clickButton(5,0)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B51' onclick='ExMemory.clickButton(5,1)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B52' onclick='ExMemory.clickButton(5,2)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B53' onclick='ExMemory.clickButton(5,3)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B54' onclick='ExMemory.clickButton(5,4)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B55' onclick='ExMemory.clickButton(5,5)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B56' onclick='ExMemory.clickButton(5,6)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B57' onclick='ExMemory.clickButton(5,7)'>?</a></td></tr><tr align='center'><td><a href='#' class='ui-btn ui-btn-inline' id='B60' onclick='ExMemory.clickButton(6,0)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B61' onclick='ExMemory.clickButton(6,1)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B62' onclick='ExMemory.clickButton(6,2)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B63' onclick='ExMemory.clickButton(6,3)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B64' onclick='ExMemory.clickButton(6,4)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B65' onclick='ExMemory.clickButton(6,5)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B66' onclick='ExMemory.clickButton(6,6)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B67' onclick='ExMemory.clickButton(6,7)'>?</a></td></tr><tr align='center'><td><a href='#' class='ui-btn ui-btn-inline' id='B70' onclick='ExMemory.clickButton(7,0)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B71' onclick='ExMemory.clickButton(7,1)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B72' onclick='ExMemory.clickButton(7,2)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B73' onclick='ExMemory.clickButton(7,3)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B74' onclick='ExMemory.clickButton(7,4)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B75' onclick='ExMemory.clickButton(7,5)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B76' onclick='ExMemory.clickButton(7,6)'>?</a></td><td><a href='#' class='ui-btn ui-btn-inline' id='B77' onclick='ExMemory.clickButton(7,7)'>?</a></td></tr></table>
+		</center>
+
+	</div><!-- /content -->
+	
+	<div data-role="panel" id="MenuPanel" data-position="right" data-display="overlay" data-theme="a">
+    <!-- panel content goes here -->
+        <a href="#gameplay" data-rel="close" class="ui-btn ui-btn-b" onclick="ExMemory.restartGame()">Restart</a>
+        <a href="#home" class="ui-btn ui-btn-b" onclick="ExMemory.stopGame()" data-transition="flip">Leave Game</a>
+	</div><!-- /panel -->
+
+	<div data-role="footer">
+        <div data-role="navbar">
+            <center>
+                <ul>
+                    <li>Flips : <span id="flips">0</span></li>
+                    <li>Matched : <span id="match">0</span>/32</li>
+                    <li>Time : <span id="time">00:00</span></li>
+                </ul>
+            </center>
+    </div>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+    
+    <div data-role="page" id="halloffame" data-theme="a">
+	<div data-role="header">
+		<h1>8x Memory - Hall of fame</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+        <p>Minimum Flips : <span id='minflip'></span></p>
+        <p>Time Taken : <span id='timetaken'></span></p>
+        <a href="#home" class="ui-btn ui-btn-b" data-transition="flip">Back</a>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4></h4>
+	</div><!-- /footer -->
+</div><!-- /Home two -->
+    
+    <div data-role="page" id="howtoplay" data-theme="a">
+	<div data-role="header">
+		<h1>8x Memory - How to Play ?</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+        <a href="#home" class="ui-btn ui-btn-b" data-transition="flip">Back</a>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4></h4>
+	</div><!-- /footer -->
+</div><!-- /Home two -->
+    
+    <div data-role="page" id="completed" data-theme="a">
+	<div data-role="header">
+		<h1>8x Memory - Completed</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+        <p>Minimum Flips : <span id='currflip'></span></p>
+        <p>Time Taken : <span id='currtimetaken'></span></p>
+        <a href="#home" class="ui-btn ui-btn-b" data-transition="flip">Home</a>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4></h4>
+	</div><!-- /footer -->
+</div><!-- /Home two -->
+</body>
+</html>
